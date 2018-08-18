@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC0739862128291400D8377B /* AlertBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0739852128291400D8377B /* AlertBoxView.swift */; };
+		BC07398821282ACC00D8377B /* AlertBoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC07398721282ACC00D8377B /* AlertBoxView.xib */; };
 		BC6D095721174851002EF695 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6D095621174851002EF695 /* AppDelegate.swift */; };
 		BC6D095921174851002EF695 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC6D095821174851002EF695 /* ViewController.swift */; };
 		BC6D095C21174851002EF695 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC6D095A21174851002EF695 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC0739852128291400D8377B /* AlertBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertBoxView.swift; sourceTree = "<group>"; };
+		BC07398721282ACC00D8377B /* AlertBoxView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertBoxView.xib; sourceTree = "<group>"; };
 		BC6D095321174851002EF695 /* AlertBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlertBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC6D095621174851002EF695 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC6D095821174851002EF695 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,9 +39,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC073984212828C900D8377B /* Alert Box */ = {
+			isa = PBXGroup;
+			children = (
+				BC0739852128291400D8377B /* AlertBoxView.swift */,
+				BC07398721282ACC00D8377B /* AlertBoxView.xib */,
+			);
+			path = "Alert Box";
+			sourceTree = "<group>";
+		};
 		BC6D094A21174851002EF695 = {
 			isa = PBXGroup;
 			children = (
+				BC073984212828C900D8377B /* Alert Box */,
 				BC6D095521174851002EF695 /* AlertBox */,
 				BC6D095421174851002EF695 /* Products */,
 			);
@@ -124,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC6D096121174851002EF695 /* LaunchScreen.storyboard in Resources */,
+				BC07398821282ACC00D8377B /* AlertBoxView.xib in Resources */,
 				BC6D095E21174851002EF695 /* Assets.xcassets in Resources */,
 				BC6D095C21174851002EF695 /* Main.storyboard in Resources */,
 			);
@@ -138,6 +153,7 @@
 			files = (
 				BC6D095921174851002EF695 /* ViewController.swift in Sources */,
 				BC6D095721174851002EF695 /* AppDelegate.swift in Sources */,
+				BC0739862128291400D8377B /* AlertBoxView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AlertBoxView" customModule="AlertBox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="356" height="636"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="phe-Op-DeK">
+                    <rect key="frame" x="20" y="260" width="316" height="116.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THIS IS TITLE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXw-aM-uM7">
+                            <rect key="frame" x="10" y="10" width="296" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="this is the message." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypq-XM-Qnq">
+                            <rect key="frame" x="9.5" y="44.5" width="296" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="stq-rM-I0Y">
+                            <rect key="frame" x="0.0" y="75.5" width="316" height="41"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="TVT-pz-etP">
+                                    <rect key="frame" x="0.0" y="1" width="316" height="40"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1r5-rG-3kf">
+                                            <rect key="frame" x="0.0" y="0.0" width="157.5" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <state key="normal" title="Right">
+                                                <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnRightDidClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="uva-2y-Xig"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naV-Fe-AAz">
+                                            <rect key="frame" x="158.5" y="0.0" width="157.5" height="40"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <state key="normal" title="Left">
+                                                <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="btnLeftDidClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="sbo-zB-JLO"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="9nU-q7-Qx1"/>
+                                    </constraints>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="41" id="8bF-f6-GIl"/>
+                                <constraint firstItem="TVT-pz-etP" firstAttribute="leading" secondItem="stq-rM-I0Y" secondAttribute="leading" id="Xsw-e0-vx9"/>
+                                <constraint firstAttribute="bottom" secondItem="TVT-pz-etP" secondAttribute="bottom" id="mKs-zM-62g"/>
+                                <constraint firstAttribute="trailing" secondItem="TVT-pz-etP" secondAttribute="trailing" id="rLA-29-Ief"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="stq-rM-I0Y" secondAttribute="trailing" id="J5w-kK-PZN"/>
+                        <constraint firstItem="stq-rM-I0Y" firstAttribute="top" secondItem="ypq-XM-Qnq" secondAttribute="bottom" constant="15" id="UEc-b4-pNR"/>
+                        <constraint firstItem="XXw-aM-uM7" firstAttribute="leading" secondItem="phe-Op-DeK" secondAttribute="leading" constant="10" id="Y05-14-Peg"/>
+                        <constraint firstItem="XXw-aM-uM7" firstAttribute="top" secondItem="phe-Op-DeK" secondAttribute="top" constant="10" id="au4-9g-Rhs"/>
+                        <constraint firstAttribute="trailing" secondItem="XXw-aM-uM7" secondAttribute="trailing" constant="10" id="eTB-zk-fIB"/>
+                        <constraint firstAttribute="trailing" secondItem="ypq-XM-Qnq" secondAttribute="trailing" constant="10" id="nNs-SG-jMI"/>
+                        <constraint firstItem="ypq-XM-Qnq" firstAttribute="leading" secondItem="phe-Op-DeK" secondAttribute="leading" constant="10" id="v6w-Tj-UG1"/>
+                        <constraint firstAttribute="bottom" secondItem="stq-rM-I0Y" secondAttribute="bottom" id="vlg-YS-aPf"/>
+                        <constraint firstItem="stq-rM-I0Y" firstAttribute="leading" secondItem="phe-Op-DeK" secondAttribute="leading" id="xwb-ms-GP7"/>
+                        <constraint firstItem="ypq-XM-Qnq" firstAttribute="top" secondItem="XXw-aM-uM7" secondAttribute="bottom" constant="15" id="zS8-7Z-5iu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="phe-Op-DeK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NAh-W0-so0"/>
+                <constraint firstItem="phe-Op-DeK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="eGG-ob-JLu"/>
+                <constraint firstItem="phe-Op-DeK" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="hJy-2v-ihT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="phe-Op-DeK" secondAttribute="trailing" constant="20" id="nmX-S5-z5j"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="alertView" destination="phe-Op-DeK" id="DxN-pc-7da"/>
+                <outlet property="btnLeft" destination="naV-Fe-AAz" id="JXc-Ml-dgS"/>
+                <outlet property="btnRight" destination="1r5-rG-3kf" id="8XI-di-3Au"/>
+                <outlet property="lblMessage" destination="ypq-XM-Qnq" id="xqZ-XG-fBW"/>
+                <outlet property="lblTitle" destination="XXw-aM-uM7" id="D76-Tc-XYY"/>
+            </connections>
+            <point key="canvasLocation" x="16" y="36"/>
+        </view>
+    </objects>
+</document>
