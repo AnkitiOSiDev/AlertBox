@@ -31,7 +31,10 @@ class AlertBoxView: UIView {
     var rotateRadian:CGFloat = 1.5 // 1 rad = 57 degrees
     var springWithDamping: CGFloat = 0.7
     var delay: TimeInterval = 0
+    
+    //alert UI specification
     var backgroundTransparency:CGFloat = 0.40
+    var cornerRadius:CGFloat = 10
     
     //inital values
     private var title: String = ""
@@ -51,7 +54,7 @@ class AlertBoxView: UIView {
     
     override func draw(_ rect: CGRect) {
         alertView.alpha = 0
-        alertView.layer.cornerRadius = 10
+        alertView.layer.cornerRadius = cornerRadius
         alertView.clipsToBounds = true
         startAnimation()
     }

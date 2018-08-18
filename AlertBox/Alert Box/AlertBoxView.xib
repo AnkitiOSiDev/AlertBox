@@ -17,21 +17,24 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="phe-Op-DeK">
-                    <rect key="frame" x="20" y="260" width="316" height="116.5"/>
+                    <rect key="frame" x="20" y="225.5" width="316" height="185"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THIS IS TITLE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXw-aM-uM7">
-                            <rect key="frame" x="10" y="10" width="296" height="19.5"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <rect key="frame" x="10" y="16" width="296" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="this is the message." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypq-XM-Qnq">
-                            <rect key="frame" x="9.5" y="44.5" width="296" height="16"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <rect key="frame" x="9.5" y="52" width="296" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="e1Z-tu-ddO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="stq-rM-I0Y">
-                            <rect key="frame" x="0.0" y="75.5" width="316" height="41"/>
+                            <rect key="frame" x="0.0" y="144" width="316" height="41"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="TVT-pz-etP">
                                     <rect key="frame" x="0.0" y="1" width="316" height="40"/>
@@ -77,15 +80,15 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="stq-rM-I0Y" secondAttribute="trailing" id="J5w-kK-PZN"/>
-                        <constraint firstItem="stq-rM-I0Y" firstAttribute="top" secondItem="ypq-XM-Qnq" secondAttribute="bottom" constant="15" id="UEc-b4-pNR"/>
+                        <constraint firstItem="stq-rM-I0Y" firstAttribute="top" secondItem="ypq-XM-Qnq" secondAttribute="bottom" constant="22" id="UEc-b4-pNR"/>
                         <constraint firstItem="XXw-aM-uM7" firstAttribute="leading" secondItem="phe-Op-DeK" secondAttribute="leading" constant="10" id="Y05-14-Peg"/>
-                        <constraint firstItem="XXw-aM-uM7" firstAttribute="top" secondItem="phe-Op-DeK" secondAttribute="top" constant="10" id="au4-9g-Rhs"/>
+                        <constraint firstItem="XXw-aM-uM7" firstAttribute="top" secondItem="phe-Op-DeK" secondAttribute="top" constant="16" id="au4-9g-Rhs"/>
                         <constraint firstAttribute="trailing" secondItem="XXw-aM-uM7" secondAttribute="trailing" constant="10" id="eTB-zk-fIB"/>
                         <constraint firstAttribute="trailing" secondItem="ypq-XM-Qnq" secondAttribute="trailing" constant="10" id="nNs-SG-jMI"/>
                         <constraint firstItem="ypq-XM-Qnq" firstAttribute="leading" secondItem="phe-Op-DeK" secondAttribute="leading" constant="10" id="v6w-Tj-UG1"/>
                         <constraint firstAttribute="bottom" secondItem="stq-rM-I0Y" secondAttribute="bottom" id="vlg-YS-aPf"/>
                         <constraint firstItem="stq-rM-I0Y" firstAttribute="leading" secondItem="phe-Op-DeK" secondAttribute="leading" id="xwb-ms-GP7"/>
-                        <constraint firstItem="ypq-XM-Qnq" firstAttribute="top" secondItem="XXw-aM-uM7" secondAttribute="bottom" constant="15" id="zS8-7Z-5iu"/>
+                        <constraint firstItem="ypq-XM-Qnq" firstAttribute="top" secondItem="XXw-aM-uM7" secondAttribute="bottom" constant="12" id="zS8-7Z-5iu"/>
                     </constraints>
                 </view>
             </subviews>
