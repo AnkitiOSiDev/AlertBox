@@ -24,8 +24,7 @@ class AlertBoxView: UIView {
     @IBOutlet weak var btnLeft: UIButton!
     
     //animation values
-    var imgLogo: UIImage?
-    var animateDuration: TimeInterval = 1.0
+    var animateDuration: TimeInterval = 0.3
     var scaleX: CGFloat = 0.3
     var scaleY: CGFloat = 1.5
     var rotateRadian:CGFloat = 1.5 // 1 rad = 57 degrees
@@ -53,10 +52,15 @@ class AlertBoxView: UIView {
     }
     
     override func draw(_ rect: CGRect) {
-        alertView.alpha = 0
+        self.alpha = 0
         alertView.layer.cornerRadius = cornerRadius
         alertView.clipsToBounds = true
-        startAnimation()
+        alertView.transform = CGAffineTransform(scaleX: 0.01, y: 0.01)
+        UIView.animate(withDuration: animateDuration, delay: delay, options: .curveEaseOut, animations: {() -> Void in
+            self.alertView.transform = .identity
+            self.alpha = 1
+        }, completion: {(finished: Bool) -> Void in
+        })
     }
     
     //MARK: - Configuration of alert
@@ -82,8 +86,13 @@ class AlertBoxView: UIView {
     }
     
     func hide(){
-        perform(#selector(self.removeFromSuperview), with: self, afterDelay: delay + 0.105)
-        startAnimation()
+        alertView.transform = .identity
+        UIView.animate(withDuration: animateDuration, delay: delay, options: .curveEaseOut, animations: {() -> Void in
+            self.alertView.transform = CGAffineTransform(scaleX: 0.01, y: 0.01)
+            self.alpha = 0
+        }, completion: {(finished: Bool) -> Void in
+            self.removeFromSuperview()
+        })
     }
     
     func setupUI(){
@@ -108,10 +117,6 @@ class AlertBoxView: UIView {
     
     //MARK:- Animation
     private func startAnimation(){
-        alertView.alpha = 1
-        UIView.animate(withDuration: animateDuration, delay: delay, usingSpringWithDamping: springWithDamping, initialSpringVelocity: 0, options: .allowUserInteraction, animations: {
-            self.alertView.transform = .identity
-        }, completion: nil)
     }
 
     func addAction(_ action: AlertAction){
